@@ -18,7 +18,7 @@ import { PlaceProvider } from './providers/PlaceProvider';
 
 const token = getItemFromLocalStorage('token');
 
-axios.defaults.baseURL = '';
+axios.defaults.baseURL = 'https://airbnb-backend-vyck.onrender.com';
 // axios.defaults.baseURL = 'http://localhost:4000';
 axios.defaults.withCredentials = true;
 axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
